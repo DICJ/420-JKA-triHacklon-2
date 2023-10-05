@@ -1,10 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Trihacklon_2_22;
+using Trihacklon2;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Trihacklon_2_22.Tests
+namespace Trihacklon2.Tests
 {
     [TestClass()]
     public class EstPalindromeTest
