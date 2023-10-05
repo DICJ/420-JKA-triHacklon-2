@@ -106,8 +106,6 @@ namespace Trihacklon2
                         (CalculatriceCrypto.EstPremierSur(n) ? " sûr" : "") + "." : "");
         }
 
-        // Plus grand long  :        9_223_372_036_854_775_807
-        // Plus grand long premier : 9_223_372_036_854_775_783
         // Plus grand int :                      2_147_483_647
         // Plus grand int premier :              2_147_483_647
         static void Main(string[] _)
