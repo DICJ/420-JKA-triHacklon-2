@@ -22,13 +22,13 @@ namespace Trihacklon2
         /// </summary>
         /// <param name="left">Vrai pour alignement à gauche, faux pour alignement droite</param>
         /// <param name="lignes">Les lignes de texte à encadrer</param>
-        static void ImprimerCadre(bool left = false, string titre = null, params string[] lignes)
+        static void ImprimerCadre(bool left = false, string titre = "", params string[] lignes)
         {
             MotImportant("╔");
             for (int i = 0; i < LARGEUR - 2; i++) MotImportant("═");
             MotImportant("╗");
             Console.WriteLine();
-            if (titre != null)
+            if (titre != "")
             {
                 int padL = (LARGEUR - titre.Length) / 2 - 1;
                 int padR = (LARGEUR - titre.Length + 1) / 2 - 1;
@@ -119,7 +119,7 @@ namespace Trihacklon2
                 valide = int.TryParse(Console.ReadLine(), out int n) && n > 0;
                 if (valide)
                 {
-                    ImprimerCadre(false, null,
+                    ImprimerCadre(false, "",
                         string.Format("{0:n0} (décimal) ", n),
                         CalculatriceCrypto.DecimalABinaire(n) + " (binaire) ",
                         CalculatriceCrypto.DecimalAOctal(n) + " (octal)   ",
